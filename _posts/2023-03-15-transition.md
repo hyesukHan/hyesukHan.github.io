@@ -60,3 +60,78 @@ transition-duration: <시간>
 </body>
  ```
 요소에 마우스 호버가 되면 넓이와 높이가 2초, 1초에 걸쳐서 바뀌는 소스입니다.
+
+ ```
+transition-timing-function : linear | ease | ease=in | ease-out | ease-in-out | cubic-beaier(n,n,n,n)
+ ```
+속성값  
+
+linear : 시작부터 끝까지 같은 속도로 트랜지션을 진행합니다.
+ease : 천천히 시작해서 점점 빨라지다가 마지막에는 천천히 끝냅니다. 기본값입니다.  
+ease-in : 시작을 느리게 합니다.  
+ease-out : 느리게 끝냅니다.  
+ease-in-out : 느리게 시작하고 느리게 끝냅니다.  
+cubic-bezier(n,n,n,n) : 베지에 함수를 직접 정의해 사용합니다.  
+
+  ```
+ transition-delay : <시간>
+  ```  
+이 속성에서 지정하는 시간만큼 기다렸다가 트렌지션이 시작됩니다.
+사용할 수 있는 값은 s나 ms입니다.
+
+ ```
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ex{
+            position:relative;
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            border : 1px black solid;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        #ex:hover .box{
+            transform:rotate(360deg);
+            margin-left:420px;
+        }
+        .box{
+            font-size: 12px;
+            position:relative;
+            width:60px;
+            height:60px;
+            margin-bottom:10px;
+            background-color:#eee;
+
+        }
+        .box p {
+            text-align: center;
+            padding-top: 4px;
+        }
+
+        #no-delay{
+            transition-duration: 3s;
+            border : 1px solid #ff6a00;
+        }
+
+        
+        #delay{
+            transition-duration: 3s;
+            transition-delay:1s;
+            border : 1px solid #006aff;
+        }
+    </style>
+</head>
+<body>
+    <div id ="ex">
+        <div id = "no-delay" class="box"><p>no-delay</p></div>
+        <div id = "delay" class = "box"><p>delay</p></div>
+    </div>
+</body>
+ ```
+ 위 소스는 첫번째 상자는 지연시간 없이 트랜지션을 실행하고 두 번째 상자에는 1초동안 지연시간을 두고 트랜지션을 실행해 비교한 것입니다.
+
