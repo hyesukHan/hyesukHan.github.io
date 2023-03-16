@@ -66,7 +66,7 @@ transition-timing-function : linear | ease | ease=in | ease-out | ease-in-out | 
  ```
 속성값  
 
-linear : 시작부터 끝까지 같은 속도로 트랜지션을 진행합니다.
+linear : 시작부터 끝까지 같은 속도로 트랜지션을 진행합니다.   
 ease : 천천히 시작해서 점점 빨라지다가 마지막에는 천천히 끝냅니다. 기본값입니다.  
 ease-in : 시작을 느리게 합니다.  
 ease-out : 느리게 끝냅니다.  
