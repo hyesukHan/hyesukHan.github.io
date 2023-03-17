@@ -2,7 +2,7 @@
 layout: post
 title:  "transition"
 date:   2023-03-15 17:35:12 +0900
-categories: jekyll update
+categories: html+CSS
 ---
 
 트랜지션이란?
@@ -21,10 +21,10 @@ transition-property
 transition-property: all | none | <속성이름>  
  ```
 
-속성값    
-all : 기본 값으로 모든 속성이 트랜지션 대상이 됩니다.     
-none : 트랜지션동안 아무 속성도 바뀌지 않습니다.     
-<속성이름> : 원하는 대상을 골라 지정할 수 있습니다.       
+속성값  
+all : 기본 값으로 모든 속성이 트랜지션 대상이 됩니다.  
+none : 트랜지션동안 아무 속성도 바뀌지 않습니다.  
+<속성이름> : 원하는 대상을 골라 지정할 수 있습니다.    
 
 transition-duration  
 
