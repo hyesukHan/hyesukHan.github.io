@@ -35,11 +35,7 @@ transition-duration: <시간>
 트랜지션의 진행 시간은 지정하지 않으면 0초입니다. 트랜지션 대상이 되는 속성이 여러개라면 ,로 구분해 순서대로 여러 개를 지정할 수 있습니다.
 
  ```
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
     <style>
         .tr1{
             width: 100px;
@@ -54,7 +50,7 @@ transition-duration: <시간>
             height:120px;
         }
     </style>
-</head>
+
 <body>
     <div class="tr1"></div>
 </body>
@@ -80,11 +76,6 @@ cubic-bezier(n,n,n,n) : 베지에 함수를 직접 정의해 사용합니다.
 사용할 수 있는 값은 s나 ms입니다.
 
  ```
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
         #ex{
             position:relative;
@@ -125,7 +116,7 @@ cubic-bezier(n,n,n,n) : 베지에 함수를 직접 정의해 사용합니다.
             border : 1px solid #006aff;
         }
     </style>
-</head>
+
 <body>
     <div id ="ex">
         <div id = "no-delay" class="box"><p>no-delay</p></div>
