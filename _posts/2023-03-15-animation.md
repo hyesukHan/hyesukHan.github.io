@@ -93,7 +93,22 @@ css로 애니메이션을 만들 때 @keyframe 속성을 이용해 여러개의 
 </body>
 ```
 
+### animation-duration 속성- 애니메이션 실행시간 설정하기
 
+```
+animation-duration:<시간>
+```
+
+애니메이션을 얼마 동안 재생할 지 설정합니다. 사용할 수 있는 값은 s나 ms입니다. 기본값이 0이므로 속성을 정의하지 않으면 애니메이션이 일어나지 않습니다.
+
+### animation-direction속성-애니메이션 방향 지정하기
+
+```
+animation-direction: normal | alternate
+```
+
+normal은 애니메이션을 끝까지 실행하면 원래 있던 위치로 돌아갑니다. <br>
+alternate 애니메이션을 끝까지 실행하면 왔던 방향으로 되돌아가면서 애니메이션을 실행합니다.
 
 
 
